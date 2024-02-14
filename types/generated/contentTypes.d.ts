@@ -774,6 +774,7 @@ export interface ApiBlogPostBlogPost extends Schema.CollectionType {
     singularName: 'blog-post';
     pluralName: 'blog-posts';
     displayName: 'Blog post';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -781,6 +782,7 @@ export interface ApiBlogPostBlogPost extends Schema.CollectionType {
   attributes: {
     Title: Attribute.Text;
     Content: Attribute.RichText;
+    Media: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -805,6 +807,7 @@ export interface ApiTeamMemberTeamMember extends Schema.CollectionType {
     singularName: 'team-member';
     pluralName: 'team-members';
     displayName: 'Team member';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -814,6 +817,7 @@ export interface ApiTeamMemberTeamMember extends Schema.CollectionType {
     JobTitle: Attribute.String;
     Phone: Attribute.String;
     Email: Attribute.Email;
+    Image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
